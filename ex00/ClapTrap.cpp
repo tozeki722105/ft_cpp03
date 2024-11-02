@@ -21,7 +21,7 @@ ClapTrap::ClapTrap(const ClapTrap& other)
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& rhs)
 {
-	std::cout << "ClapTrap" << name << "copy constructor called" << std::endl;
+	std::cout << "ClapTrap " << name << "copy assignment operator called!" << std::endl;
 	if (this == &rhs)
 		return (*this);
 	this->name = rhs.name;
