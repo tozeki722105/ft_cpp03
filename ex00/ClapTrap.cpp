@@ -85,3 +85,23 @@ void ClapTrap::setAttackDamage(unsigned int score)
 {
 	this->attackDamage = score;
 };
+
+const std::string& ClapTrap::getName() const
+{
+	return (this->name);
+}
+
+unsigned int ClapTrap::getHitPoint() const
+{
+	return (this->hitPoint);
+}
+
+unsigned int ClapTrap::getEnergyPoint() const
+{
+	return (this->energyPoint);
+}
+
+unsigned int ClapTrap::getAttackDamage() const
+{
+	return (this->attackDamage);
+}

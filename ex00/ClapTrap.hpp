@@ -16,13 +16,17 @@ public:
 	ClapTrap(const std::string& n);
 	~ClapTrap();
 	ClapTrap(const ClapTrap& other);
-	ClapTrap& operator=(const ClapTrap& rhs);
-	void      attack(const std::string& target);
-	void      takeDamage(unsigned int amount);
-	void      beRepaired(unsigned int amount);
-	void      setHitPoint(unsigned int point);
-	void      setEnergyPoint(unsigned int point);
-	void      setAttackDamage(unsigned int score);
+	ClapTrap&          operator=(const ClapTrap& rhs);
+	void               attack(const std::string& target);
+	void               takeDamage(unsigned int amount);
+	void               beRepaired(unsigned int amount);
+	void               setHitPoint(unsigned int point);
+	void               setEnergyPoint(unsigned int point);
+	void               setAttackDamage(unsigned int score);
+	const std::string& getName() const;
+	unsigned int       getHitPoint() const;
+	unsigned int       getEnergyPoint() const;
+	unsigned int       getAttackDamage() const;
 };
 
 #endif
