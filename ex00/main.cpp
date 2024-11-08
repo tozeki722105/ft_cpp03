@@ -1,5 +1,3 @@
-#include <cassert>
-
 #include "ClapTrap.hpp"
 
 int main()
